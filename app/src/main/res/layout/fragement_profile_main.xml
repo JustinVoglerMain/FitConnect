@@ -1,0 +1,204 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/profileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/userPostsRecyclerView"
+            >
+
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/profile_picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_profile_picture" />
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/firstname_lastname"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+            <!-- Username EditText (initially hidden) -->
+            <EditText
+                android:id="@+id/userNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:hint="@string/enter_name"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <!-- Edit Name Button -->
+            <ImageButton
+                android:id="@+id/editNameButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/edit_name_button"
+                android:src="@drawable/ic_edit" />
+
+            <!-- Bio Section -->
+            <LinearLayout
+                android:id="@+id/bioSectionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/userBioTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/bio"
+                    android:textColor="@color/material_dynamic_neutral30"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/userBioEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/bio_hint"
+                    android:textColor="@color/material_dynamic_neutral30"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/editBioButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/edit_bio_button1"
+                    android:src="@drawable/ic_edit" />
+            </LinearLayout>
+
+            <!-- Follower Stats -->
+            <LinearLayout
+                android:id="@+id/followStatsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <!-- Following -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/followingCountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/following"
+                        android:textColor="@color/material_dynamic_neutral30"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Followers -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/followersCountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/followers"
+                        android:textColor="@color/material_dynamic_neutral30"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Posts -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/postsCountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/posts"
+                        android:textColor="@color/material_dynamic_neutral30"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Posts Title -->
+            <TextView
+                android:id="@+id/galleryPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:text="@string/user_posts"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    <!-- User Posts RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userPostsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/profileInfo"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

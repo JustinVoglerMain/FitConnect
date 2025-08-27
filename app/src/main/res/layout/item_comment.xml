@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/commentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone" /> <!-- Hidden by default -->
+
+    <TextView
+        android:id="@+id/commentDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <ImageButton
+            android:id="@+id/editCommentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/edit_comment"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_edit"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/deleteCommentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/delete_comment"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

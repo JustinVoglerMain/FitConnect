@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/construction_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/main_login_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/main_login_button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/main_create_account_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/create_my_account"
+        android:textSize="20sp" />
+</LinearLayout>
+

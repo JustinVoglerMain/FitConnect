@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">FitConnect</string>
+    <string name="create_my_account">Create my account</string>
+    <string name="main_login_button">Login for Existing Users</string>
+    <string name="construction_text">This page is currently under construction</string>
+    <string name="default_img_text">No Image</string>
+    // Account strings
+    <string name="username_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="back_button">Back</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="return_to_homepage">Return to Homepage</string>
+    // account settings
+    <string name="delete_account">Delete Account</string>
+    <string name="edit_email">Edit Email</string>
+    <string name="logout">Logout</string>
+    <string name="new_email">New Email</string>
+    <string name="old_email">Old Email</string>
+    // navigation buttons
+    <string name="settings_button">settings</string>
+    // authentication
+    <string name="authenticate">Authenticate</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    // timeline and posts
+    <string name="display_name">Display Name</string>
+    <string name="post_content">Add post content here</string>
+    <string name="post_hint">What\'s on your mind?</string>
+    <string name="select_image_button">Select Image</string>
+    <string name="post_button">Post</string>
+    <string name="create_post_button">Create New Post</string>
+    <string name="menu_button_description">Post settings</string>
+    <string name="edit_post_action">Edit Post</string>
+    <string name="delete_post_action">Delete Post</string>
+    <string name="find_friend">Find friend</string>
+    <string name="friends">Friends</string>
+    <string name="like_button">Like Button</string>
+    <string name="_0_likes">0 likes</string>
+    <string name="like">like</string>
+    <string name="comment_button">comment button</string>
+    <string name="bio">bio</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="firstname_lastname">FirstName LastName</string>
+    <string name="zero">0</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+    <string name="follow">Follow</string>
+    <string name="message">Message</string>
+    <string name="user_posts">User Posts</string>
+    <string name="settings">Settings</string>
+    // friends list
+    <string name="friend_name">Friend Name</string>
+    <string name="status">Status</string>
+    <string name="no_name">NO NAME</string>
+    <string name="no_bio">NO BIO</string>
+    <string name="zero_comments">0 comments</string>
+    <string name="edit_bio_button" />
+    <string name="bio_hint" />
+    <string name="hello">Hello</string>
+    <string name="edit_bio_button1">edit bio button</string>
+    <string name="Profile">Profile</string>
+    <string name="edit_comment">edit comment</string>
+    <string name="delete_comment">delete comment</string>
+    <string name="Post">post</string>
+    <string name="Write_comment">write a comment…</string>
+    // viewing someone's profile
+    <string name="follow_user">Follow</string>
+    <string name="unfollow_user">Unfollow</string>
+    <string name="block_user">Block</string>
+    <string name="default_profile_image">Profile Image</string>
+    <string name="comments_text_view">comments</string>
+    <string name="post_text_view">posts</string>
+    // context menus and others
+    <string name="context_menu">Context Menu</string>
+    <string name="enter_name">enter name</string>
+    <string name="edit_name_button">edit name button</string>
+    <string name="workouts">Workouts</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="create">Create</string>
+    <string name="home">Home</string>
+</resources>

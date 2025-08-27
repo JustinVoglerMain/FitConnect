@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/create_account"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- name input !-->
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColorHint="#A1887F" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#757575" />
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="12dp"
+        android:text="@string/create_account"
+        android:textColor="#212121"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Return Home Button -->
+    <Button
+        android:id="@+id/btnReturnHomepage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="12dp"
+        android:text="@string/return_to_homepage"
+        android:textColor="#212121" />
+
+</LinearLayout>

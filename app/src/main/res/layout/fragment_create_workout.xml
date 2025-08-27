@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragment.CreateWorkoutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Workout Name"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/durationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (minutes)"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/typeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/difficultyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Difficulty"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/daysEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Days"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/levelUpPointsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Level Up Points"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <!-- New fields for Weighted Workout -->
+        <EditText
+            android:id="@+id/weightedWorkoutNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weighted Workout Name"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/weightedWorkoutRepsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reps"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/weightedWorkoutSetsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sets"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/weightedWorkoutWeightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (lbs)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/addWeightedWorkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Weighted Workout"
+            android:padding="12dp"
+            android:backgroundTint="?attr/colorPrimary" />
+
+        <!-- Existing button for creating workout -->
+        <Button
+            android:id="@+id/createWorkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Workout"
+            android:padding="12dp"
+            android:backgroundTint="?attr/colorPrimary" />
+    </LinearLayout>
+</ScrollView>
+
+
+
